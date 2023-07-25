@@ -1,0 +1,101 @@
+/*
+    Why not embed font-family in stylesheet as opposed to each html file?
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+*/
+
+/* Colors used. !!!Consider Changing Colors!!!!
+    https://www.color-hex.com/color-palette/1294
+    Background color Grey- #f8f8ff
+    Primary Color Dark Blue- #011f4b
+    Secondary Colors:#03396c, #005b96, #6497b1
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8ff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #011f4b;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1.5;
+    font-style: bold;
+    font-variant: small-caps;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+button, input[type="submit"] {
+    border: none;
+    font-family:inherit;
+    background-color: #011f4b;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.9;
+}
+
+a {
+    color: #011f4b;
+}
+
+
+a:visited {
+    /* visited link */
+    color: #005b96;
+}
+
+a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+    color: #6497b1;
+}
+
+a:active {
+    /* selected link */
+    color: #03396c;
+}
+
+.profile {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.page-footer {
+    clear: both;
+}
+
+.footer__image-link--hov {
+    /*remove underlining after image links in footer*/
+    text-decoration: none;
+}
+
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
