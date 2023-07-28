@@ -11,22 +11,15 @@
 
 */
 
-:root {
-    --background-color: #f8f8ff;
-    --primary-color: #75DDDD;
-    --secondary-color--blue: #0D3B66;
-    --secondary-color--orange: #FCB139;
-}
-
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: #f8f8ff;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    color: var(--secondary-color--blue);
+    color: #0D3B66;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -68,8 +61,8 @@ body {
 } 
 
 .grid__item {
-    background-color: var(--secondary-color--blue);
-    color: var(--secondary-color--orange);
+    background-color: #0D3B66;
+    color: #FCB139;
     width: auto;
     min-height: auto;
     margin: 0;
@@ -94,13 +87,13 @@ body {
     list-style: none;
     display: inline-block;
     margin-left: 15px;
-    color:var(--secondary-color--orange);
-    background-color: var(--secondary-color--blue);
+    color:#FCB139;
+    background-color: #0D3B66;
     width: 120px;
     padding: 5px 10px;
     text-align: center;
     border-radius: 100px;
-    border: 2px solid var(--secondary-color--blue);
+    border: 2px solid #0D3B66;
     transition: background-color 0.2s ease-in-out ;
 }
 
@@ -122,13 +115,13 @@ p {
 }
 
 a {
-    color: var(--secondary-color--blue);
+    color: #0D3B66;
 }
 
 
 a:visited {
     /* visited link */
-    color: var(--secondary-color--blue);
+    color: #0D3B66;
 }
 
 a:hover, a:focus {
@@ -138,25 +131,24 @@ a:hover, a:focus {
 
 a:active {
     /* selected link */
-    color: var(--primary-color);
+    color: #75DDDD;
 }
 
 .navigation-list__item:hover {
-    background-color: var(--background-color);
+    background-color: #f8f8ff;
     opacity: 0.8;
 }
 
 .navigation-list__item a:visited {
     /* visited link */
-    color:var(--secondary-color--orange);
+    color:#FCB139;
 }
 
-button, input[type="submit"],
-.button {
+button {
     border: none;
     font-family:inherit;
-    background-color: var(--secondary-color--blue);
-    color: var(--secondary-color--orange);
+    background-color: #0D3B66;
+    color: #FCB139;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -164,21 +156,80 @@ button, input[type="submit"],
     transition: opacity 0.2s ease-in-out ;
 }
 
-button:hover, 
-button:focus, 
-input[type="submit"]:hover, 
-input[type="submit"]:focus,
-.button:hover, 
+input[type="submit"] {
+    border: none;
+    font-family:inherit;
+    background-color: #0D3B66;
+    color: #FCB139;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: opacity 0.2s ease-in-out ;
+}
+
+.button {
+    border: none;
+    font-family:inherit;
+    background-color: #0D3B66;
+    color: #FCB139;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: opacity 0.2s ease-in-out ;
+}
+
+button:hover{
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    color: #FCB139;
+}
+
+button:focus{
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    color: #FCB139;
+}
+
+input[type="submit"]:hover{
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    color: #FCB139;
+}
+
+input[type="submit"]:focus{
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    color: #FCB139;
+}
+
+.button:hover{
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    color: #FCB139;
+}
+
 .button:focus{
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
-    color: var(--secondary-color--orange);
+    color: #FCB139;
 }
 
 .button:visited {
-    color: var(--secondary-color--orange);
+    color: #FCB139;
 }
 
 .profile,
