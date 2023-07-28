@@ -153,12 +153,6 @@ a:visited {
     color: var(--secondary-color--blue);
 }
 
-/*
-a:visited {
-    /* visited link
-    color: var(--secondary-color--blue);
-}*/
-
 a:hover, a:focus {
     /* No underlining when hovering over a link */
     text-decoration: none;
@@ -183,6 +177,7 @@ a:active {
 .navigation-list__item--active a:visited {
     color: var(--secondary-color--blue);
 }*/
+
 %button-font-color {
     color: var(--secondary-color--orange);
 }
@@ -221,7 +216,6 @@ input[type="submit"]:focus,
     max-width: 700px;
 }
 
-/*.about-me,*/
 .contact-info {
     text-align: center;
 }
