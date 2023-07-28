@@ -16,6 +16,8 @@
     --primary-color: #75DDDD;
     --secondary-color--blue: #0D3B66;
     --secondary-color--orange: #FCB139;
+    --sun-color: #edc655;
+    --sun-color--transition: #f76414;
 }
 
 * {
@@ -102,23 +104,36 @@ body {
     border-radius: 100px;
     border: 2px solid var(--secondary-color--blue);
     transition: background-color 0.2s ease-in-out ;
-}
-
-.navigation-list__item a {
-    text-decoration: none;
+    a {
+        text-decoration: none;
     font-weight: bold;
     color:var(--secondary-color--orange);
+    }
+    &:hover {
+        background-color: var(--background-color);
+        opacity: 0.8;
+    }
+    a:visited {
+        color:var(--secondary-color--orange);
+    }
 }
 
 .navigation-list__item--active {
     background-color: var(--primary-color);
     color: var(--secondary-color--blue);
     border: 2px solid var(--primary-color);
+    a {
+        color: var(--secondary-color--blue);
+    }
+    a:visited {
+        color: var(--secondary-color--blue);
+    }
 }
 
+/*
 .navigation-list__item--active a {
     color: var(--secondary-color--blue);
-}
+}*/
 
 h1 {
     font-size: 30px;
@@ -133,15 +148,16 @@ p {
     line-height: 1.2;
 }
 
-a {
-    color: var(--secondary-color--blue);
-}
-
-
+a,
 a:visited {
-    /* visited link */
     color: var(--secondary-color--blue);
 }
+
+/*
+a:visited {
+    /* visited link
+    color: var(--secondary-color--blue);
+}*/
 
 a:hover, a:focus {
     /* No underlining when hovering over a link */
@@ -153,26 +169,31 @@ a:active {
     color: var(--primary-color);
 }
 
+/********
 .navigation-list__item:hover {
     background-color: var(--background-color);
     opacity: 0.8;
 }
 
 .navigation-list__item a:visited {
-    /* visited link */
+    /* visited link
     color:var(--secondary-color--orange);
 }
 
 .navigation-list__item--active a:visited {
     color: var(--secondary-color--blue);
+}*/
+%button-font-color {
+    color: var(--secondary-color--orange);
 }
 
 button, input[type="submit"],
-.button {
+.button,
+.button:visited {
+    @extend %button-font-color;
     border: none;
     font-family:inherit;
     background-color: var(--secondary-color--blue);
-    color: var(--secondary-color--orange);
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -186,15 +207,11 @@ input[type="submit"]:hover,
 input[type="submit"]:focus,
 .button:hover, 
 .button:focus{
+    @extend %button-font-color;
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
-    color: var(--secondary-color--orange);
-}
-
-.button:visited {
-    color: var(--secondary-color--orange);
 }
 
 .profile,
@@ -229,10 +246,10 @@ table {
 
 @keyframes color-change {
     from {
-        fill: #edc655;
+        fill: var(--sun-color);
     }
     to {
-        fill: #f76414;
+        fill: var(--sun-color--transition);
     }
 }
 
