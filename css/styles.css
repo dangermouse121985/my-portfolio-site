@@ -3,14 +3,6 @@
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 */
 
-/* Colors used. !!!Consider Changing Colors!!!!
-    https://www.color-hex.com/color-palette/1294
-    Background color Grey- #f8f8ff
-    Primary Color Dark Blue- #011f4b
-    Secondary Colors:#03396c, #005b96, #6497b1
-
-*/
-
 :root {
     --background-color: #f8f8ff;
     --primary-color: #75DDDD;
