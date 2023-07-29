@@ -11,6 +11,7 @@
     --sun-color: #edc655;
     --sun-color--transition: #f76414;
     --theme-spacing: 10px;
+    --header-image-size: 60px;
 }
 
 * {
@@ -39,6 +40,8 @@ body {
 
 .page-header__item:first-child {
     flex-shrink: 1;
+    width: var(--header-image-size);
+    height: var(--header-image-size);
 }
 
 .page-header__item:last-child {
