@@ -76,7 +76,7 @@
       display: grid;
       -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 20px;
+      grid-gap: 10px;
       margin: 10px;
     }
   }
@@ -112,7 +112,7 @@
     color: #FCB139;
     background-color: #0D3B66;
     width: 120px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     text-align: center;
     border-radius: 100px;
     border: 2px solid #0D3B66;
