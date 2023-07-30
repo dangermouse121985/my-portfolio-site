@@ -210,7 +210,11 @@ input[type="submit"]:focus,
 .about-me,
 .contact-info {
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 900px;
+    /* height: 60vh;
+    display:flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .contact-info {
@@ -219,10 +223,10 @@ input[type="submit"]:focus,
 
 .profile__portrait {
     float: left;
-    width: 250px;
+    width: 500px;
     margin-right: 40px;
     margin-bottom: 20px;
-    border-radius: 50%;
+    border-radius: 1%;
 }
 
 #about-picture {

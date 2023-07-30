@@ -31,6 +31,7 @@
   }
   
   .page-header {
+    background-color: #0D3B66;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -283,7 +284,11 @@
   .about-me,
   .contact-info {
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 900px;
+    /* height: 60vh;
+    display:flex;
+    justify-content: center;
+    align-items: center; */
   }
   
   .contact-info {
@@ -292,10 +297,10 @@
   
   .profile__portrait {
     float: left;
-    width: 250px;
+    width: 500px;
     margin-right: 40px;
     margin-bottom: 20px;
-    border-radius: 50%;
+    border-radius: 1%;
   }
   
   #about-picture {
