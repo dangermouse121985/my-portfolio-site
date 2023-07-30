@@ -222,6 +222,13 @@ input[type="submit"]:focus,
     text-align: center;
 }
 
+.profile__logo {
+    width: 200px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border-radius: 1%;
+}
+
 .profile__portrait {
     float: left;
     width: 50px;
