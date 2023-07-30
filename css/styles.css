@@ -4,9 +4,10 @@
 */
 
 :root {
-    --background-color: #f8f8ff;
+    --background-color: #0D3B66;
     --primary-color: #75DDDD;
     --secondary-color--blue: #0D3B66;
+    --secondary-color--white: #fff;
     --secondary-color--orange: #FCB139;
     --sun-color: #edc655;
     --sun-color--transition: #f76414;
@@ -23,7 +24,7 @@ body {
     background-color: var(--background-color);
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    color: var(--secondary-color--blue);
+    color: var(--secondary-color--white);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -223,7 +224,7 @@ input[type="submit"]:focus,
 
 .profile__portrait {
     float: left;
-    width: 500px;
+    width: 50px;
     margin-right: 40px;
     margin-bottom: 20px;
     border-radius: 1%;
