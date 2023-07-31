@@ -182,7 +182,7 @@ a:active {
 }*/
 
 %button-font-color {
-    color: var(--secondary-color--orange);
+    color: var(--secondary-color--blue);
 }
 
 button, input[type="submit"],
@@ -191,7 +191,7 @@ button, input[type="submit"],
     @extend %button-font-color;
     border: none;
     font-family:inherit;
-    background-color: var(--secondary-color--blue);
+    background-color: var(--primary-color);
     text-decoration: none;
     padding: var(--theme-spacing);;
     border-radius: 3px;

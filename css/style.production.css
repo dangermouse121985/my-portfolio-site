@@ -194,40 +194,40 @@
       color: var(--secondary-color--blue);
   }*/
   button:hover {
-    color: #FCB139;
+    color: #0D3B66;
   }
   button:focus {
-    color: #FCB139;
+    color: #0D3B66;
   }
   input[type=submit]:hover {
-    color: #FCB139;
+    color: #0D3B66;
   }
   input[type=submit]:focus {
-    color: #FCB139;
+    color: #0D3B66;
   }
   .button:hover {
-    color: #FCB139;
+    color: #0D3B66;
   }
   .button:focus {
-    color: #FCB139;
+    color: #0D3B66;
   }
   button {
-    color: #FCB139;
+    color: #0D3B66;
   }
   input[type=submit] {
-    color: #FCB139;
+    color: #0D3B66;
   }
   .button {
-    color: #FCB139;
+    color: #0D3B66;
   }
   .button:visited {
-    color: #FCB139;
+    color: #0D3B66;
   }
   
   button {
     border: none;
     font-family: inherit;
-    background-color: #0D3B66;
+    background-color: #75DDDD;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -239,7 +239,7 @@
   input[type=submit] {
     border: none;
     font-family: inherit;
-    background-color: #0D3B66;
+    background-color: #75DDDD;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -251,7 +251,7 @@
   .button {
     border: none;
     font-family: inherit;
-    background-color: #0D3B66;
+    background-color: #75DDDD;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -263,7 +263,7 @@
   .button:visited {
     border: none;
     font-family: inherit;
-    background-color: #0D3B66;
+    background-color: #75DDDD;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
