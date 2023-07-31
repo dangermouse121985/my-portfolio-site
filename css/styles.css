@@ -128,8 +128,11 @@ body {
     a:visited {
         color: var(--secondary-color--blue);
     }
+    &:hover a {
+        color: var(--secondary-color--orange);
+    }
     a:hover {
-        color: var(--secondary-color--orange)
+        color: var(--secondary-color--orange);
     }
 }
 

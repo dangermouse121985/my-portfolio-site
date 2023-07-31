@@ -140,6 +140,9 @@
   .navigation-list__item--active a:visited {
     color: #0D3B66;
   }
+  .navigation-list__item--active:hover a {
+    color: #FCB139;
+  }
   .navigation-list__item--active a:hover {
     color: #FCB139;
   }
