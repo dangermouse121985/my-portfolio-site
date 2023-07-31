@@ -212,6 +212,11 @@ input[type="submit"]:focus,
     opacity: 0.8;
 }
 
+.main-section {
+    display: flex;
+    flex-grow: 1;
+}
+
 .profile,
 .about-me,
 .contact-info {
@@ -225,7 +230,6 @@ input[type="submit"]:focus,
 
 .profile {
     text-align: center;
-    justify-content: center;
 }
 
 .contact-info {
@@ -233,9 +237,11 @@ input[type="submit"]:focus,
 }
 
 .profile__logo {
-    width: 200px;
+    width: 150px;
+    height: 150px;
     margin-right: 40px;
     margin-bottom: 20px;
+    margin-top: 50px;
     border-radius: 1%;
 }
 
@@ -336,6 +342,11 @@ footer {
     .profile p {
         width: 75%;
         margin: auto;
+    }
+
+    .profile__logo {
+        margin-top: var(--theme-spacing);
+        margin-right: 0;
     }
 }
 
