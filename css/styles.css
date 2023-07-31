@@ -225,6 +225,7 @@ input[type="submit"]:focus,
 
 .profile {
     text-align: center;
+    justify-content: center;
 }
 
 .contact-info {
@@ -240,7 +241,7 @@ input[type="submit"]:focus,
 
 .profile__portrait {
     float: left;
-    width: 50px;
+    width: 400px;
     margin-right: 40px;
     margin-bottom: 20px;
     border-radius: 1%;
