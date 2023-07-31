@@ -157,16 +157,16 @@
   }
   
   p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.2;
   }
   
   a {
-    color: #0D3B66;
+    color: #FCB139;
   }
   
   a:visited {
-    color: #0D3B66;
+    color: #FCB139;
   }
   
   a:hover, a:focus {
