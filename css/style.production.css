@@ -334,6 +334,7 @@
   
   #about-picture {
     margin-top: 20px;
+    width: 100%;
   }
   
   table {
@@ -371,11 +372,11 @@
   @keyframes cloud-move {
     from {
       -webkit-transform: translate(0, 50px);
-              transform: translate(0, 50px);
+              transform: translate(-100%, 50px);
     }
     to {
       -webkit-transform: translate(200px, 50px);
-              transform: translate(200px, 50px);
+              transform: translate(100%, 50px);
     }
   }
   @-webkit-keyframes cloud-move-reverse {
@@ -403,9 +404,14 @@
             animation: 4s color-change infinite alternate linear;
   }
   
-  .cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
-            animation: 30s cloud-move infinite alternate linear;
+  path.cls-51 {
+    -webkit-animation: 30s cloud-move infinite normal linear;
+            animation: 30s cloud-move infinite normal linear;
+  }
+
+  path.cls-52 {
+    -webkit-animation: 40s cloud-move infinite normal linear;
+            animation: 40s cloud-move infinite normal linear;
   }
   
   .cloud-back {
