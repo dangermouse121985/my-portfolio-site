@@ -342,81 +342,75 @@
     margin: 20px auto;
   }
   
-  @-webkit-keyframes color-change {
-    from {
-      fill: #edc655;
-    }
-    to {
-      fill: #f76414;
-    }
-  }
-  
+  /* 
   @keyframes color-change {
-    from {
-      fill: #edc655;
-    }
-    to {
-      fill: #f76414;
-    }
-  }
+      from {
+          fill: var(--sun-color);
+      }
+      to {
+          fill: var(--sun-color--transition);
+      }
+  } */
   @-webkit-keyframes cloud-move {
     from {
-      -webkit-transform: translate(0, 50px);
-              transform: translate(0, 50px);
+      -webkit-transform: translate(-100%, 50px);
+              transform: translate(-100%, 50px);
     }
     to {
-      -webkit-transform: translate(200px, 50px);
-              transform: translate(200px, 50px);
+      -webkit-transform: translate(100%, 50px);
+              transform: translate(100%, 50px);
     }
   }
   @keyframes cloud-move {
     from {
-      -webkit-transform: translate(0, 50px);
+      -webkit-transform: translate(-100%, 50px);
               transform: translate(-100%, 50px);
     }
     to {
-      -webkit-transform: translate(200px, 50px);
+      -webkit-transform: translate(100%, 50px);
               transform: translate(100%, 50px);
     }
   }
-  @-webkit-keyframes cloud-move-reverse {
-    from {
-      -webkit-transform: translate(446px, 48px);
-              transform: translate(446px, 48px);
+  /* @keyframes cloud-move-reverse {
+      from {
+        transform: translate(446px, 48px);
+      }
+      to {
+        transform: translate(100px, 48px);
+      }
     }
-    to {
-      -webkit-transform: translate(100px, 48px);
-              transform: translate(100px, 48px);
-    }
-  }
-  @keyframes cloud-move-reverse {
-    from {
-      -webkit-transform: translate(446px, 48px);
-              transform: translate(446px, 48px);
-    }
-    to {
-      -webkit-transform: translate(100px, 48px);
-              transform: translate(100px, 48px);
-    }
-  }
-  .sun {
-    -webkit-animation: 4s color-change infinite alternate linear;
-            animation: 4s color-change infinite alternate linear;
-  }
   
+  .sun {
+      animation: 4s color-change infinite normal linear;
+  } */
   path.cls-51 {
     -webkit-animation: 30s cloud-move infinite normal linear;
             animation: 30s cloud-move infinite normal linear;
   }
-
+  
   path.cls-52 {
+    -webkit-animation: 35s cloud-move infinite normal linear;
+            animation: 35s cloud-move infinite normal linear;
+  }
+  
+  path.cls-53 {
     -webkit-animation: 40s cloud-move infinite normal linear;
             animation: 40s cloud-move infinite normal linear;
   }
   
-  .cloud-back {
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
+  path.cls-54 {
+    -webkit-animation: 33s cloud-move infinite normal linear;
+            animation: 33s cloud-move infinite normal linear;
+  }
+  
+  path.cls-55 {
+    -webkit-animation: 38s cloud-move infinite normal linear;
+            animation: 38s cloud-move infinite normal linear;
+  }
+  
+  path.cls-56 {
+    -webkit-animation: 43s cloud-move infinite normal linear;
+            animation: 43s cloud-move infinite normal linear;
   }
   
   footer {

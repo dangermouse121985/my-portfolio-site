@@ -265,7 +265,7 @@ table {
     width: 75%;
     margin: 20px auto;
 }
-
+/* 
 @keyframes color-change {
     from {
         fill: var(--sun-color);
@@ -273,18 +273,18 @@ table {
     to {
         fill: var(--sun-color--transition);
     }
-}
+} */
 
 @keyframes cloud-move {
     from {
-        transform: translate(0, 50px);
+        transform: translate(-100%, 50px);
     }
     to {
-        transform: translate(200px, 50px);
+        transform: translate(100%, 50px);
     }
 }
 
-@keyframes cloud-move-reverse {
+/* @keyframes cloud-move-reverse {
     from {
       transform: translate(446px, 48px);
     }
@@ -294,15 +294,31 @@ table {
   }
 
 .sun {
-    animation: 4s color-change infinite alternate linear;
+    animation: 4s color-change infinite normal linear;
+} */
+
+path.cls-51 {
+    animation: 30s cloud-move infinite normal linear;
 }
 
-.cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
+path.cls-52 {
+    animation: 35s cloud-move infinite normal linear;
 }
 
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+path.cls-53 {
+    animation: 40s cloud-move infinite normal linear;
+}
+
+path.cls-54 {
+    animation: 33s cloud-move infinite normal linear;
+}
+
+path.cls-55 {
+    animation: 38s cloud-move infinite normal linear;
+}
+
+path.cls-56 {
+    animation: 43s cloud-move infinite normal linear;
 }
 
 footer {
