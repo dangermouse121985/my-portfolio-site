@@ -147,7 +147,7 @@ h1 {
     line-height: 1.5;
     font-style: bold;
     font-variant: small-caps;
-    margin: var(--theme-spacing);;
+    margin: var(--theme-spacing);
 }
 
 p {
