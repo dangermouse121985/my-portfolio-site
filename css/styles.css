@@ -153,6 +153,7 @@ h1 {
 p {
     font-size: 18px;
     line-height: 1.2;
+    color: var(--secondary-color--white);
 }
 
 a,
