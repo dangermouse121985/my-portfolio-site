@@ -76,13 +76,12 @@
     }
   }
   .grid__item {
-    background-color: #fff;
+    background: rgba(0, 0, 0, 0.1);
     color: #FCB139;
     width: auto;
     min-height: auto;
     margin: 0;
     padding: 10px;
-    opacity: 0.2;
   }
   
   #contact-form {
