@@ -62,18 +62,19 @@ body {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: var(--theme-spacing);;
-        margin: var(--theme-spacing);;
+        grid-gap: var(--theme-spacing);
+        margin: var(--theme-spacing);
     }
 } 
 
 .grid__item {
-    background-color: var(--secondary-color--blue);
+    background-color: var(--secondary-color--white);
     color: var(--secondary-color--orange);
     width: auto;
     min-height: auto;
     margin: 0;
-    padding: var(--theme-spacing);;
+    padding: var(--theme-spacing);
+    opacity: 0.2;
 }
 
 #contact-form {
@@ -224,7 +225,7 @@ input[type="submit"]:focus,
 .about-me,
 .contact-info {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px;
     /* height: 60vh;
     display:flex;
     justify-content: center;
@@ -250,10 +251,11 @@ input[type="submit"]:focus,
 
 .profile__portrait {
     float: left;
-    width: 400px;
+    width: 500px;
     margin-right: 40px;
     margin-bottom: 20px;
     border-radius: 1%;
+    padding-top: 20px;
 }
 
 #about-picture {
@@ -345,17 +347,6 @@ footer {
     .grid {
         grid-template-columns: 1fr;
     }
-    
-    .profile__portrait {
-        float: none;
-        margin: auto;
-        width: 50%;
-    }
-
-    .about-me,
-    .profile {
-        text-align: center;
-    }
 
     .about-me,
     .profile p {
@@ -392,4 +383,17 @@ footer {
     h1 {
         font-size: 22px;
     }
+
+    .profile__portrait {
+        float: none;
+        margin: auto;
+        width: 75%;
+        padding-top: 0;
+      }
+
+    .about-me,
+    .profile {
+        text-align: center;
+    }
+
 }

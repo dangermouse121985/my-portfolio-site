@@ -76,12 +76,13 @@
     }
   }
   .grid__item {
-    background-color: #0D3B66;
+    background-color: #fff;
     color: #FCB139;
     width: auto;
     min-height: auto;
     margin: 0;
     padding: 10px;
+    opacity: 0.2;
   }
   
   #contact-form {
@@ -300,7 +301,7 @@
   .about-me,
   .contact-info {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px;
     /* height: 60vh;
     display:flex;
     justify-content: center;
@@ -326,10 +327,11 @@
   
   .profile__portrait {
     float: left;
-    width: 400px;
+    width: 500px;
     margin-right: 40px;
     margin-bottom: 20px;
     border-radius: 1%;
+    padding-top: 20px;
   }
   
   #about-picture {
@@ -444,17 +446,6 @@
       grid-template-columns: 1fr;
     }
   
-    .profile__portrait {
-      float: none;
-      margin: auto;
-      width: 50%;
-    }
-  
-    .about-me,
-  .profile {
-      text-align: center;
-    }
-  
     .about-me,
   .profile p {
       width: 75%;
@@ -488,5 +479,17 @@
   
     h1 {
       font-size: 22px;
+    }
+  
+    .profile__portrait {
+      float: none;
+      margin: auto;
+      width: 75%;
+      padding-top: 0;
+    }
+  
+    .about-me,
+  .profile {
+      text-align: center;
     }
   }
