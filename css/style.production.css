@@ -16,10 +16,10 @@
   }
   
   body {
-    background-color: #f8f8ff;
+    background-color: #0D3B66;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    color: #0D3B66;
+    color: #fff;
     min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -31,7 +31,6 @@
   }
   
   .page-header {
-    background-color: #0D3B66;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -77,7 +76,7 @@
     }
   }
   .grid__item {
-    background-color: #0D3B66;
+    background: rgba(0, 0, 0, 0.1);
     color: #FCB139;
     width: auto;
     min-height: auto;
@@ -121,11 +120,13 @@
     color: #FCB139;
   }
   .navigation-list__item:hover {
-    background-color: #f8f8ff;
-    opacity: 0.8;
+    background-color: #0D3B66;
   }
   .navigation-list__item a:visited {
     color: #FCB139;
+  }
+  .navigation-list__item a:hover {
+    color: #75DDDD;
   }
   
   .navigation-list__item--active {
@@ -138,6 +139,12 @@
   }
   .navigation-list__item--active a:visited {
     color: #0D3B66;
+  }
+  .navigation-list__item--active:hover a {
+    color: #FCB139;
+  }
+  .navigation-list__item--active a:hover {
+    color: #FCB139;
   }
   
   /*
@@ -153,16 +160,16 @@
   }
   
   p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.2;
   }
   
   a {
-    color: #0D3B66;
+    color: #FCB139;
   }
   
   a:visited {
-    color: #0D3B66;
+    color: #FCB139;
   }
   
   a:hover, a:focus {
@@ -190,40 +197,40 @@
       color: var(--secondary-color--blue);
   }*/
   button:hover {
-    color: #FCB139;
+    color: #0D3B66;
   }
   button:focus {
-    color: #FCB139;
+    color: #0D3B66;
   }
   input[type=submit]:hover {
-    color: #FCB139;
+    color: #0D3B66;
   }
   input[type=submit]:focus {
-    color: #FCB139;
+    color: #0D3B66;
   }
   .button:hover {
-    color: #FCB139;
+    color: #0D3B66;
   }
   .button:focus {
-    color: #FCB139;
+    color: #0D3B66;
   }
   button {
-    color: #FCB139;
+    color: #0D3B66;
   }
   input[type=submit] {
-    color: #FCB139;
+    color: #0D3B66;
   }
   .button {
-    color: #FCB139;
+    color: #0D3B66;
   }
   .button:visited {
-    color: #FCB139;
+    color: #0D3B66;
   }
   
   button {
     border: none;
     font-family: inherit;
-    background-color: #0D3B66;
+    background-color: #75DDDD;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -235,7 +242,7 @@
   input[type=submit] {
     border: none;
     font-family: inherit;
-    background-color: #0D3B66;
+    background-color: #75DDDD;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -247,7 +254,7 @@
   .button {
     border: none;
     font-family: inherit;
-    background-color: #0D3B66;
+    background-color: #75DDDD;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -259,7 +266,7 @@
   .button:visited {
     border: none;
     font-family: inherit;
-    background-color: #0D3B66;
+    background-color: #75DDDD;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -280,19 +287,41 @@
     opacity: 0.8;
   }
   
+  .main-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  
   .profile,
   .about-me,
   .contact-info {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px;
     /* height: 60vh;
     display:flex;
     justify-content: center;
     align-items: center; */
   }
   
+  .profile {
+    text-align: center;
+  }
+  
   .contact-info {
     text-align: center;
+  }
+  
+  .profile__logo {
+    width: 150px;
+    height: 150px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border-radius: 1%;
   }
   
   .profile__portrait {
@@ -301,11 +330,12 @@
     margin-right: 40px;
     margin-bottom: 20px;
     border-radius: 1%;
+    padding-top: 20px;
   }
   
   #about-picture {
     margin-top: 20px;
-    height: 100%;
+    width: 100%;
   }
   
   table {
@@ -313,76 +343,75 @@
     margin: 20px auto;
   }
   
-  @-webkit-keyframes color-change {
-    from {
-      fill: #edc655;
-    }
-    to {
-      fill: #f76414;
-    }
-  }
-  
+  /* 
   @keyframes color-change {
-    from {
-      fill: #edc655;
-    }
-    to {
-      fill: #f76414;
-    }
-  }
+      from {
+          fill: var(--sun-color);
+      }
+      to {
+          fill: var(--sun-color--transition);
+      }
+  } */
   @-webkit-keyframes cloud-move {
     from {
-      -webkit-transform: translate(0, 50px);
-              transform: translate(0, 50px);
+      -webkit-transform: translate(-100%, 50px);
+              transform: translate(-100%, 50px);
     }
     to {
-      -webkit-transform: translate(200px, 50px);
-              transform: translate(200px, 50px);
+      -webkit-transform: translate(100%, 50px);
+              transform: translate(100%, 50px);
     }
   }
   @keyframes cloud-move {
     from {
-      -webkit-transform: translate(0, 50px);
-              transform: translate(0, 50px);
+      -webkit-transform: translate(-100%, 50px);
+              transform: translate(-100%, 50px);
     }
     to {
-      -webkit-transform: translate(200px, 50px);
-              transform: translate(200px, 50px);
+      -webkit-transform: translate(100%, 50px);
+              transform: translate(100%, 50px);
     }
   }
-  @-webkit-keyframes cloud-move-reverse {
-    from {
-      -webkit-transform: translate(446px, 48px);
-              transform: translate(446px, 48px);
+  /* @keyframes cloud-move-reverse {
+      from {
+        transform: translate(446px, 48px);
+      }
+      to {
+        transform: translate(100px, 48px);
+      }
     }
-    to {
-      -webkit-transform: translate(100px, 48px);
-              transform: translate(100px, 48px);
-    }
-  }
-  @keyframes cloud-move-reverse {
-    from {
-      -webkit-transform: translate(446px, 48px);
-              transform: translate(446px, 48px);
-    }
-    to {
-      -webkit-transform: translate(100px, 48px);
-              transform: translate(100px, 48px);
-    }
-  }
+  
   .sun {
-    -webkit-animation: 4s color-change infinite alternate linear;
-            animation: 4s color-change infinite alternate linear;
+      animation: 4s color-change infinite normal linear;
+  } */
+  path.cls-51 {
+    -webkit-animation: 30s cloud-move infinite normal linear;
+            animation: 30s cloud-move infinite normal linear;
   }
   
-  .cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
-            animation: 30s cloud-move infinite alternate linear;
+  path.cls-52 {
+    -webkit-animation: 35s cloud-move infinite normal linear;
+            animation: 35s cloud-move infinite normal linear;
   }
   
-  .cloud-back {
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
+  path.cls-53 {
+    -webkit-animation: 40s cloud-move infinite normal linear;
+            animation: 40s cloud-move infinite normal linear;
+  }
+  
+  path.cls-54 {
+    -webkit-animation: 33s cloud-move infinite normal linear;
+            animation: 33s cloud-move infinite normal linear;
+  }
+  
+  path.cls-55 {
+    -webkit-animation: 38s cloud-move infinite normal linear;
+            animation: 38s cloud-move infinite normal linear;
+  }
+  
+  path.cls-56 {
+    -webkit-animation: 43s cloud-move infinite normal linear;
+            animation: 43s cloud-move infinite normal linear;
   }
   
   footer {
@@ -416,21 +445,15 @@
       grid-template-columns: 1fr;
     }
   
-    .profile__portrait {
-      float: none;
-      margin: auto;
-      width: 50%;
-    }
-  
-    .about-me,
-  .profile {
-      text-align: center;
-    }
-  
     .about-me,
   .profile p {
       width: 75%;
       margin: auto;
+    }
+  
+    .profile__logo {
+      margin-top: 10px;
+      margin-right: 0;
     }
   }
   @media all and (min-width: 500px) and (max-width: 750px) {
@@ -455,5 +478,17 @@
   
     h1 {
       font-size: 22px;
+    }
+  
+    .profile__portrait {
+      float: none;
+      margin: auto;
+      width: 75%;
+      padding-top: 0;
+    }
+  
+    .about-me,
+  .profile {
+      text-align: center;
     }
   }
