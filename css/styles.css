@@ -13,7 +13,7 @@
     --theme-spacing: 10px;
     --header-image-size: 60px;
     --button-border: 2px solid rgba(0, 0, 0, 0.3);
-    --grid-color: rgba(0, 0, 0, 0,1);
+    --grid-color: rgba(0, 0, 0, 0.1);
   }
   
   * {
