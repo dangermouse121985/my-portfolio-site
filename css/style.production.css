@@ -497,6 +497,11 @@
       display: block;
     }
 
+    .menu_button {
+      width: 30px;
+      margin-right: 10px;
+    }
+
     .navigation-list__item {
       border-radius: 0%;
       background-color: #092947;
@@ -510,6 +515,10 @@
       background-color: #75DDDD;
       color: #0D3B66;
       border: 2px solid #75DDDD;
+    }
+
+    .navigation-list__item:nth-child(2) {
+      margin-top: 20px;
     }
 
     .navigation-list:hover .navigation-list__item {
