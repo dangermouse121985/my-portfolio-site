@@ -108,12 +108,11 @@ body {
   display: inline-block;
   margin-left: 15px;
   color: #FCB139;
-  background-color: #0D3B66;
   width: 120px;
   padding: 5px 10px;
   text-align: center;
   border-radius: 100px;
-  border: 2px solid #0D3B66;
+  border: 2px solid #75DDDD;
   -webkit-transition: background-color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
