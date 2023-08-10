@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292.53 292.53">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292.35 198.28">
   <defs>
     <style>
       .cls-1 {
         fill: #fff;
         stroke: #fff;
         stroke-miterlimit: 10;
+        stroke-width: .82px;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
-    <rect class="cls-1" x=".5" y=".5" width="291.53" height="58.31" rx="29.15" ry="29.15"/>
-    <rect class="cls-1" x=".5" y="117.11" width="291.53" height="58.31" rx="29.15" ry="29.15"/>
-    <rect class="cls-1" x=".5" y="233.72" width="291.53" height="58.31" rx="29.15" ry="29.15"/>
+    <path class="cls-1" d="m29.56.41h233.22c16.1,0,29.15,8.84,29.15,19.75h0c0,10.91-13.05,19.75-29.15,19.75H29.56C13.46,39.9.41,31.06.41,20.16H.41C.41,9.25,13.46.41,29.56.41Z"/>
+    <path class="cls-1" d="m29.56,79.39h233.22c16.1,0,29.15,8.84,29.15,19.75h0c0,10.91-13.05,19.75-29.15,19.75H29.56C13.46,118.89.41,110.05.41,99.14H.41c0-10.91,13.05-19.75,29.15-19.75Z"/>
+    <path class="cls-1" d="m29.56,158.38h233.22c16.1,0,29.15,8.84,29.15,19.75h0c0,10.91-13.05,19.75-29.15,19.75H29.56c-16.1,0-29.15-8.84-29.15-19.75H.41c0-10.91,13.05-19.75,29.15-19.75Z"/>
   </g>
 </svg>

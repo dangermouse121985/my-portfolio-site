@@ -498,7 +498,7 @@
 
     .menu_button {
       width: 30px;
-      margin-right: 10px;
+      margin: 10px 10px 0 0;
     }
 
     .navigation-list__item {
