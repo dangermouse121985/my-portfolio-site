@@ -322,7 +322,7 @@
     text-align: center;
   }
   
-  .profile__logo {
+  .profile__emoji {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
@@ -457,7 +457,7 @@
       margin: auto;
     }
   
-    .profile__logo {
+    .profile__emoji {
       margin-top: 10px;
       margin-right: 0;
     }
