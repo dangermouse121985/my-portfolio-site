@@ -472,6 +472,13 @@
     }
   }
   @media all and (max-width: 750px) {
+    .contact-info,
+    .about-me,
+    .projects
+    {
+      margin-top: 50px;
+    }
+
     .grid {
       grid-gap: 10px;
     }

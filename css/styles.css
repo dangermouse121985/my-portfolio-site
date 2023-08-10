@@ -14,6 +14,8 @@
     --header-image-size: 60px;
     --button-border: 2px solid rgba(0, 0, 0, 0.3);
     --grid-color: rgba(0, 0, 0, 0.1);
+    --header-color: #092947;
+    --header-box-shadow: 0px 5px 5px #000;
   }
   
   * {
@@ -34,6 +36,8 @@
     display: flex;
     width: 100%;
     padding: var(--theme-spacing);
+    background: var(--header-color);
+    box-shadow: var(--header-box-shadow);
   }
   
   .page-header__item {
@@ -242,7 +246,7 @@
     text-align: center;
   }
   
-  .profile__logo {
+  .profile__emoji {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
@@ -353,8 +357,7 @@
       margin: auto;
     }
   
-    .profile__logo {
-      margin-top: var(--theme-spacing);
+    .profile__emoji {
       margin-right: 0;
     }
   }
@@ -368,6 +371,13 @@
     }
   }
   @media all and (max-width: 750px) {
+    .contact-info,
+    .about-me,
+    .projects
+    {
+      margin-top: 50px;
+    }
+
     .grid {
       grid-gap: var(--theme-spacing);
     }
@@ -375,6 +385,54 @@
     .grid-item:last-child {
       grid-column: auto/auto;
       grid-row: auto/auto;
+    }
+
+    .navigation-list {
+      position: fixed;
+      right:0px;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .navigation-list__item:not(:first-child) {
+      display: none;
+    }
+
+    .navigation-list__item--mobile {
+      display: block;
+    }
+
+    .menu_button {
+      width: 30px;
+      margin: 10px 10px 0 0;
+    }
+
+    .navigation-list__item {
+      border-radius: 0%;
+      background-color: #092947;
+      border-color: #092947;
+      width: 100%;
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    .navigation-list__item--active {
+      background-color: #75DDDD;
+      color: #0D3B66;
+      border: 2px solid #75DDDD;
+    }
+
+    .navigation-list__item:nth-child(2) {
+      margin-top: 20px;
+    }
+
+    .navigation-list:hover .navigation-list__item {
+      display: block;
+      border-color: #092947;
+    }
+
+    .navigation-list__item:last-child {
+      box-shadow: 0px 5px 5px #000;
     }
   
     h1 {
