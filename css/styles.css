@@ -34,6 +34,7 @@
   
   .page-header {
     display: flex;
+    position: fixed;
     width: 100%;
     padding: var(--theme-spacing);
     background: var(--header-color);
@@ -226,6 +227,7 @@
   
   .main-section {
     display: flex;
+    margin-top: 90px;
     flex-grow: 1;
   }
   
@@ -369,7 +371,7 @@
     }
   
     .main-section {
-      margin: var(--theme-spacing);
+      margin: 90px var(--theme-spacing) var(--theme-spacing) var(--theme-spacing);
     }
   }
   @media all and (max-width: 750px) {
