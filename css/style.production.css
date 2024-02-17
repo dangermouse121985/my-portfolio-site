@@ -88,6 +88,23 @@ body {
   padding: 10px;
 }
 
+.header-image {
+  width: 100%;
+  margin: 10px;
+}
+
+.project-thumbnail-container{
+  width: 100%;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+.project-thumbnail {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
 #contact-form {
   display: -ms-grid;
   display: grid;
@@ -127,6 +144,7 @@ body {
 
 .navigation-list__item:hover {
   background-color: #0D3B66;
+  border: 2px solid #75DDDD;
 }
 
 .navigation-list__item a:visited {
@@ -173,6 +191,13 @@ h1 {
   font-style: bold;
   font-variant: small-caps;
   margin: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-style: bold;
+  font-variant: small-caps;
+  text-align: center;
 }
 
 p {
@@ -308,7 +333,8 @@ input[type=submit]:focus,
   opacity: 0.8;
 }
 
-.main-section {
+.main-section,
+.main-section--projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +346,8 @@ input[type=submit]:focus,
 
 .profile,
 .about-me,
-.contact-info {
+.contact-info,
+.project-section {
   margin: 0 auto;
   max-width: 1000px;
   /* height: 60vh;

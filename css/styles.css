@@ -79,6 +79,34 @@
     margin: 0;
     padding: var(--theme-spacing);
   }
+
+  .header-image {
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .project-thumbnail-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+  }
+  
+  .project-thumbnail {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+  }
+  
+  .project-thumbnail {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+  }
   
   #contact-form {
     display: grid;
@@ -113,6 +141,7 @@
   }
   .navigation-list__item:hover {
     background-color: var(--background-color);
+    border: var(--primary-color);
   }
   .navigation-list__item a:visited {
     color: var(--secondary-color--orange);
@@ -151,7 +180,14 @@
     line-height: 1.5;
     font-style: bold;
     font-variant: small-caps;
-    margin: var(--theme-spacing);
+    margin: 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-style: bold;
+    font-variant: small-caps;
+    text-align: center;
   }
   
   p {
@@ -225,7 +261,8 @@
     opacity: 0.8;
   }
   
-  .main-section {
+  .main-section,
+  .main-section--projects {
     display: flex;
     margin-top: 90px;
     flex-grow: 1;
@@ -233,7 +270,8 @@
   
   .profile,
   .about-me,
-  .contact-info {
+  .contact-info,
+  .project-section {
     margin: 0 auto;
     max-width: 1000px;
     /* height: 60vh;

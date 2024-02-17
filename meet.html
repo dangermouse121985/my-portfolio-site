@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--End Google Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!--Production Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <!--Style Sheet
+    <link rel="stylesheet" type="text/css" href="css/styles.css">-->
+    <title>My Projects: Meet App</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html"
+        ><img
+          class="page-header__item"
+          src="img/davidlogo.svg"
+          alt="David Crichlow's Logo. An Emoji of David"
+      /></a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li class="navigation-list__item--mobile" role="presentation">
+            <img class="menu_button" src="img/menu-button.svg" alt="" />
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li
+            class="navigation-list__item navigation-list__item--active"
+            role="presentation"
+          >
+            <a href="work.html" role="menuitem">My Projects</a>
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="about.html" role="menuitem">About Me</a>
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-section--projects">
+      <div class="project-section">
+        <div class="header-image-container">
+          <img class="header-image" src="img/meet-thumbnail.png" alt="" />
+        </div>
+        <title>Meet App</title>
+        <h1>Project Details</h1>
+        <h2>Description</h2>
+        <p>
+          In this project I aimed to develop a serverless progressive web
+          application (PWA) using React and a test-driven development (TDD)
+          approach. The application leverages the Google Calendar API to fetch
+          upcoming events, combining the benefits of serverless architecture and
+          PWAs. The key features include filtering events by city,
+          showing/hiding event details, specifying the number of events, offline
+          functionality, and charts for data visualization. The technical
+          requirements encompass React, TDD, Google Calendar API with OAuth2
+          authentication, serverless functions using AWS Lambda, cross-browser
+          compatibility, responsiveness, PWA checklist compliance, offline
+          support, installation on home screens, an alert system using an OOP
+          approach, and test coverage exceeding 90%. The project is divided into
+          exercises, covering aspects such as TDD, serverless functions, unit
+          testing, integration testing, user acceptance testing, continuous
+          delivery, object-oriented programming, progressive web apps, and data
+          visualization. The ultimate goal is to showcase expertise in modern
+          web development, serverless architecture, testing methodologies, and
+          data visualization techniques.
+        </p>
+        <h2>Links</h2>
+        <ul>
+          <li>
+            Project Link:
+            <a href="https://dangermouse121985.github.io/Meet/"
+              >https://dangermouse121985.github.io/Meet/</a
+            >
+          </li>
+          <li>
+            Github Repository:
+            <a href="https://github.com/dangermouse121985/Meet"
+              >https://github.com/dangermouse121985/Meet</a
+            >
+          </li>
+        </ul>
+        <h2>Technology</h2>
+        <p>
+          By incorporating the following technologies, the Meet app not only
+          provides a robust user interface but also offers seamless integration
+          with external services, efficient serverless functionality, and
+          thorough testing and monitoring for a reliable and high-performance
+          user experience.
+        </p>
+        <ul>
+          <li>
+            <strong>React: </strong>The web application is built using React, a
+            popular JavaScript library for building user interfaces. React's
+            component-based architecture allowed for the creation of modular and
+            reusable UI elements.
+          </li>
+          <li>
+            <strong>Google Calendar API: </strong>To integrate calendar
+            functionality, the application leverages the Google Calendar API.
+            This API provides access to events and enables seamless integration
+            with Google Calendar data.
+          </li>
+          <li>
+            <strong>AWS Lambda: </strong>The serverless architecture of the
+            application is powered by AWS Lambda. This allows for scalable and
+            cost-effective execution of server-side code without the need to
+            manage traditional server infrastructure.
+          </li>
+          <li>
+            <strong>Jest (Unit and Integration Testing): </strong>Jest, a
+            JavaScript testing framework, was employed for both unit and
+            integration testing. It ensures the reliability of individual
+            components and their interactions within the application.
+          </li>
+          <li>
+            <strong>Jest Cucumber (User Acceptance Testing): </strong>Jest
+            Cucumber was utilized for user acceptance testing. This
+            behavior-driven development (BDD) tool helps in defining and running
+            acceptance tests written in a human-readable format.
+          </li>
+          <li>
+            <strong>Puppeteer (End-to-End Testing): </strong>Puppeteer, a
+            headless browser automation tool, was used for end-to-end testing.
+            It allows for simulating user interactions and validating the
+            application's behavior in a real-world browser environment.
+          </li>
+          <li>
+            <strong>Atatus (Performance Monitoring): </strong>To ensure optimal
+            performance, Atatus was employed for monitoring the application.
+            This tool helps identify and address performance issues, ensuring a
+            smooth user experience.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+          <a
+            href="https://github.com/dangermouse121985"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="img/github.svg"
+              alt="Github logo, linked to David's Gituhub Profile"
+            />
+          </a>
+          <a
+            href="https://twitter.com/Dangermouse1219"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="img/twitter.svg"
+              alt="Twitter logo, linked to David's Twitter Profile"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/davidacrichlow/"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="img/linkedin.svg"
+              alt="Linkedin logo, linked to David's Linkedin Profile"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
