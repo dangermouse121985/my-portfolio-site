@@ -86,26 +86,15 @@
   }
   
   .project-thumbnail-container{
-    position: relative;
     width: 100%;
     overflow: hidden;
-    height: 300px;
+    max-height: 300px;
   }
   
   .project-thumbnail {
     height: auto;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 15px;
-  }
-  
-  .project-thumbnail {
-    height: auto;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 15px;
+    object-fit: cover;
   }
   
   #contact-form {

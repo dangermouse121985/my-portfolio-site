@@ -103,6 +103,7 @@ body {
   height: auto;
   width: 100%;
   object-fit: cover;
+  -o-object-fit: cover;
 }
 
 #contact-form {
@@ -130,7 +131,6 @@ body {
   padding: 5px 10px;
   text-align: center;
   border-radius: 100px;
-  border: undefined;
   -webkit-transition: background-color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
