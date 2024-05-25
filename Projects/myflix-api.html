@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--End Google Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!--Production Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="/css/style.production.css" />
+    <!--Style Sheet
+    <link rel="stylesheet" type="text/css" href="css/styles.css">-->
+    <title>My Projects: MyFlix API</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="/index.html"
+        ><img
+          class="page-header__item"
+          src="/img/davidlogo.svg"
+          alt="David Crichlow's Logo. An Emoji of David"
+      /></a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li class="navigation-list__item--mobile" role="presentation">
+            <img class="menu_button" src="/img/menu-button.svg" alt="" />
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="/index.html" role="menuitem">Home</a>
+          </li>
+          <li
+            class="navigation-list__item navigation-list__item--active"
+            role="presentation"
+          >
+            <a href="/work.html" role="menuitem">My Projects</a>
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="/about.html" role="menuitem">About Me</a>
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="/contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-section--projects">
+      <div class="project-section">
+        <div class="header-image-container">
+          <img class="header-image" src="/img/MyFlixAPI.png" alt="" />
+        </div>
+        <h1>MyFlix API</h1>
+        <h2>Project Description</h2>
+        <p>
+          The myFlix Server-Side Component is the backend service for the myFlix
+          web application, providing users with comprehensive information about
+          movies, directors, and genres. Users can register, update their
+          profiles, and curate a list of favorite movies. This component is
+          built using Node.js, Express, and MongoDB, forming a robust REST API
+          that interacts with a database to handle data operations.
+        </p>
+        <p>
+          This project significantly enhanced my backend development skills
+          using Node.js and Express. I gained experience in creating RESTful
+          APIs and working with MongoDB for data storage, using Mongoose for
+          data modeling. Implementing user authentication and authorization
+          helped me understand security best practices and JWTs (JSON Web
+          Tokens). I also learned how to deploy applications on Heroku, ensuring
+          my API is accessible online.
+        </p>
+        <h2>Project Links</h2>
+        <ul>
+          <li>
+            Github Repository:
+            <a
+              class="project-links"
+              href="https://github.com/dangermouse121985/MyFlixAPI"
+              >https://github.com/dangermouse121985/MyFlixAPI</a
+            >
+          </li>
+        </ul>
+        <h2>Project Technology</h2>
+        <ul>
+          <li>
+            <strong>Node.js: </strong> Allowed the use of JavaScript on the
+            server, enabling full-stack JavaScript development.
+          </li>
+          <li>
+            <strong>Express: </strong> Simplified the creation of API routes and
+            middleware.
+          </li>
+          <li>
+            <strong>REST API: </strong>Implemented endpoints for creating,
+            reading, updating, and deleting data.
+          </li>
+          <li>
+            <strong>MongoDB: </strong>Provided flexible database schema design
+            for storing movie, director, and genre data.
+          </li>
+          <li>
+            <strong>JWT Authentication </strong>Used JSON Web Tokens for secure
+            user sessions.
+          </li>
+          <li>
+            <strong>Data Validation: </strong> Incorporated validation logic to
+            ensure data integrity.
+          </li>
+          <li>
+            <strong>Heroku: </strong> Provided a cloud platform for hosting the
+            API, ensuring it is accessible online.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+          <a
+            href="https://github.com/dangermouse121985"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="/img/github.svg"
+              alt="Github logo, linked to David's Gituhub Profile"
+            />
+          </a>
+          <a
+            href="https://twitter.com/Dangermouse1219"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="/img/twitter.svg"
+              alt="Twitter logo, linked to David's Twitter Profile"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/davidacrichlow/"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="/img/linkedin.svg"
+              alt="Linkedin logo, linked to David's Linkedin Profile"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>

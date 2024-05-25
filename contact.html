@@ -30,23 +30,30 @@
                 <br>
                 <a href="mailto:dcrichlo.spsu@gmail.com">Email: dcrichlo.spsu@gmail.com</a>
                 <br>
-                <a href="tel:7703758937">Phone: (770)375-8937</a>
+                <a href="tel:7703758937">Phone no: (770)375-8937</a>
                 <br>
                 <a href="skype:dangermouse121985@hotmail.com">Skype: dangermouse121985@hotmail.com</a>
                 <br>
                 <a href="mailto:dcrichlo.spsu@gmail.com">Contact Me!</a>
             </p>
-            <form action="" method="post" id="contact-form">
+            <form id="contact-form">
+                <label class="standard-label form__elements" for="firstName">First Name:</label>
+                <input type="text" id="firstName" class="form__elements" placeholder="John" required>
+
+                <label class="standard-label form__elements" for="lastName">Last Name:</label>
+                <input type="text" id="lastName" class="form__elements" placeholder="Doe" required>
+
                 <label class="standard-label form__elements" for="email">Email:</label>
-                <input type="email" id="email" class="form__elements" required>
+                <input type="email" id="email" class="form__elements" placeholder="johndoe@gmail.com" required>
                 
                 <label class="standard-label form__elements" for="telephone">Telephone:</label>
-                <input type="tel" id="telephone" class="form__elements" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                <input type="tel" id="telephone" class="form__elements" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="111-123-1234" required title="Please enter a valid phone number in the format: 123-456-7890">
     
                 <label class="standard-label form__elements" for="message">Message</label>
-                <textarea name="" id="message" class="form__elements" maxlength="300" required></textarea>
+                <textarea name="message" id="message" class="form__elements" maxlength="300" placeholder="Enter a brief message about yourself and why you are reaching out" required></textarea>
     
                 <input type="submit" class="form__elements">
+                <div id="message-container"></div>
             </form>
         </div>
     </main>
@@ -66,8 +73,47 @@
             </div>
         </div>
     </footer>
-    <!--<script src="js/tota11y.min.js"></script>-->
-    <script src="js/headerNav.js"></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+           const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                telephone: document.getElementById('telephone').value,
+                message: document.getElementById('message').value
+            }; 
+
+            console.log("Form Data:", formData); // Log form data for debugging
+    
+            const jsonString = JSON.stringify(formData);
+            const testData = JSON.stringify({"body": jsonString})
+            console.log("JSON Data:", jsonString); // Log JSON data for debugging
+    
+            fetch('https://gioh9f9x1m.execute-api.us-east-1.amazonaws.com/Prod/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: testData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log("Response Data:", data); // Log response data for debugging
+                // You can handle the response data here
+                document.getElementById('message-container').innerHTML = "<p>Your message has been sent successfully! David will reach out to you shorly.</p>"; // Display success message
+            })
+            .catch(error => console.error('Error:', error));
+            document.getElementById('message-container').innerHTML = "<p>Oops! There was an error sending the message. Please wait a few minutes and try again or directly contact David using the above information.</p>"; // Display success message
+        });
+    </script>
 </body>
 
 </html>

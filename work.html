@@ -1,88 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!--End Google Fonts-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <!--Production Style Sheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
     <!--Style Sheet
     <link rel="stylesheet" type="text/css" href="css/styles.css">-->
     <title>My Projects</title>
-</head>
-
-<body>
-    <header class="page-header work-header">
-        
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html"
+        ><img
+          class="page-header__item"
+          src="img/davidlogo.svg"
+          alt="David Crichlow's Logo. An Emoji of David"
+      /></a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li class="navigation-list__item--mobile" role="presentation">
+            <img class="menu_button" src="img/menu-button.svg" alt="" />
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li
+            class="navigation-list__item navigation-list__item--active"
+            role="presentation"
+          >
+            <a href="work.html" role="menuitem">My Projects</a>
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="about.html" role="menuitem">About Me</a>
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main-section">
-        <div class="projects">
+      <div class="projects">
         <h1>Work</h1>
         <div class="grid">
-            <div class="grid__item">
-                <h2>Project 1</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at tristique est. Ut dignissim justo sit amet erat scelerisque, ut iaculis diam rutrum. Nulla tristique est eget diam feugiat lobortis. Donec in aliquet nunc. Curabitur aliquet magna ut nisl facilisis semper. Proin tristique odio at rhoncus consequat. Morbi pellentesque tempor eleifend. Donec posuere tristique facilisis. Aliquam diam sem, ultricies sit amet enim eget, cursus egestas lorem.
-                </p>
-            </div>
-            <div class="grid__item">
-                <h2>Project 2</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at tristique est. Ut dignissim justo sit amet erat scelerisque, ut iaculis diam rutrum. Nulla tristique est eget diam feugiat lobortis. Donec in aliquet nunc. Curabitur aliquet magna ut nisl facilisis semper. Proin tristique odio at rhoncus consequat. Morbi pellentesque tempor eleifend. Donec posuere tristique facilisis. Aliquam diam sem, ultricies sit amet enim eget, cursus egestas lorem.
-                </p>
-            </div>
-            <div class="grid__item">
-                <h2>Project 3</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at tristique est. Ut dignissim justo sit amet erat scelerisque, ut iaculis diam rutrum. Nulla tristique est eget diam feugiat lobortis. Donec in aliquet nunc. Curabitur aliquet magna ut nisl facilisis semper. Proin tristique odio at rhoncus consequat. Morbi pellentesque tempor eleifend. Donec posuere tristique facilisis. Aliquam diam sem, ultricies sit amet enim eget, cursus egestas lorem.
-                </p>
-            </div>
-            <div class="grid__item">
-                <h2>Project 4</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at tristique est. Ut dignissim justo sit amet erat scelerisque, ut iaculis diam rutrum. Nulla tristique est eget diam feugiat lobortis. Donec in aliquet nunc. Curabitur aliquet magna ut nisl facilisis semper. Proin tristique odio at rhoncus consequat. Morbi pellentesque tempor eleifend. Donec posuere tristique facilisis. Aliquam diam sem, ultricies sit amet enim eget, cursus egestas lorem.
-                </p>
-            </div>
-            <div class="grid__item">
-                <h2>Project 5</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at tristique est. Ut dignissim justo sit amet erat scelerisque, ut iaculis diam rutrum. Nulla tristique est eget diam feugiat lobortis. Donec in aliquet nunc. Curabitur aliquet magna ut nisl facilisis semper. Proin tristique odio at rhoncus consequat. Morbi pellentesque tempor eleifend. Donec posuere tristique facilisis. Aliquam diam sem, ultricies sit amet enim eget, cursus egestas lorem.
-                </p>
-            </div>
-            <div class="grid__item">
-                <h2>Project 6</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at tristique est. Ut dignissim justo sit amet erat scelerisque, ut iaculis diam rutrum. Nulla tristique est eget diam feugiat lobortis. Donec in aliquet nunc. Curabitur aliquet magna ut nisl facilisis semper. Proin tristique odio at rhoncus consequat. Morbi pellentesque tempor eleifend. Donec posuere tristique facilisis. Aliquam diam sem, ultricies sit amet enim eget, cursus egestas lorem.
-                </p>
-            </div>
+          <div class="grid__item">
+            <a href="Projects/pokedex.html">
+              <h2>Pokedex</h2>
+              <div class="project-thumbnail-container">
+                <img
+                  class="project-thumbnail"
+                  src="img/pokemon-list--desktop.png"
+                  alt="Pokedex Project Thumbnail Image"
+                />
+              </div>
+              <p>
+                Pokedex allows users to view a list of Pokemon and see more
+                details for each one. Additionally, users can Search the Pokemon
+                list by name and filter the list by type. The application is
+                built with HTML, CSS, and JavaScript and loads data from an
+                external API.
+              </p>
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="Projects/myflix-api.html">
+              <h2>MyFlix API</h2>
+              <div class="project-thumbnail-container">
+                <img class="project-thumbnail" src="img/MyFlixAPI.png" alt="" />
+              </div>
+              <p>
+                The myFlix API is a RESTful backend service designed for the
+                myFlix web application, providing comprehensive movie
+                information including details on movies, directors, and genres.
+                Built with Node.js, Express, and MongoDB, it supports user
+                registration, profile management, and the ability to curate a
+                list of favorite movies, ensuring secure and efficient data
+                handling.
+              </p>
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="Projects/myflix-client-react.html">
+              <h2>MyFlix Client: React</h2>
+              <div class="project-thumbnail-container">
+                <img
+                  class="project-thumbnail"
+                  src="img/MyFlix React.png"
+                  alt="MyFlix React Project Thumbnail Image"
+                />
+              </div>
+              <p>
+                MyFlix is a client side app used to view a list of movies. Users
+                can login and view information about movies, such as actors,
+                directors, genre and more. The user can also add and remove
+                movies from their favorites list, update their profile
+                information and unregister. The front end is built using React
+                and accesses the MyFlix API.
+              </p>
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="Projects/myflix-client-angular.html">
+              <h2>MyFlix Client: Angular</h2>
+              <div class="project-thumbnail-container">
+                <img
+                  class="project-thumbnail"
+                  src="img/MyFlix Angular.png"
+                  alt="MyFlix Angular Project Image"
+                />
+              </div>
+              <p>
+                MyFlix is a client side app used to view a list of movies. Users
+                can login and view information about movies, such as actors,
+                directors, genre and more. The user will also be able to add and
+                remove movies from their favorites list, and update their
+                profile information. The front end is built using Angular and
+                accesses the MyFlix API.
+              </p>
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="Projects/meet.html">
+              <h2>Meet App</h2>
+              <div class="project-thumbnail-container">
+                <img
+                  class="project-thumbnail"
+                  src="img/meet-thumbnail.png"
+                  alt="Meet Project Thumbnail image"
+                />
+              </div>
+              <p>
+                The meet app is a serverless, progressive web app (PWA) built
+                with React using test-driven development. The app allows users
+                to view a specific citie's events and their details. The
+                application uses the Google Calendar API to fetch upcoming
+                events.
+              </p>
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="Projects/chat-app.html">
+              <h2>Chat App: React Native</h2>
+              <div class="project-thumbnail-container">
+                <img class="project-thumbnail" src="img/myChat.png" alt="" />
+              </div>
+              <p>
+                This Chat app is a React Native mobile chat application designed
+                to facilitate communication between users. It allows users to
+                exchange text messages, share images, and send their current
+                location. The app is built using React Native, Expo, and Google
+                Firestore Database.
+              </p>
+            </a>
+          </div>
         </div>
-        </div>
+      </div>
     </main>
     <footer>
-        <div class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-                <a href="https://github.com/dangermouse121985" class="footer__image-link--hov" target="_blank">
-                    <img src="img/github.svg" alt="Github logo, linked to David's Gituhub Profile">
-                </a>
-                <a href="https://twitter.com/Dangermouse1219" class="footer__image-link--hov" target="_blank">
-                    <img src="img/twitter.svg" alt="Twitter logo, linked to David's Twitter Profile">
-                </a>
-                <a href="https://www.linkedin.com/in/davidacrichlow/" class="footer__image-link--hov" target="_blank">
-                    <img src="img/linkedin.svg" alt="Linkedin logo, linked to David's Linkedin Profile">
-                </a>
-            </div>
+      <div class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+          <a
+            href="https://github.com/dangermouse121985"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="img/github.svg"
+              alt="Github logo, linked to David's Gituhub Profile"
+            />
+          </a>
+          <a
+            href="https://twitter.com/Dangermouse1219"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="img/twitter.svg"
+              alt="Twitter logo, linked to David's Twitter Profile"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/davidacrichlow/"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="img/linkedin.svg"
+              alt="Linkedin logo, linked to David's Linkedin Profile"
+            />
+          </a>
         </div>
+      </div>
     </footer>
-    <!--<script src="js/tota11y.min.js"></script>-->
-    <script src="js/headerNav.js"></script>
-</body>
-
+    <!-- <script src="js/tota11y.min.js"></script> -->
+  </body>
 </html>
