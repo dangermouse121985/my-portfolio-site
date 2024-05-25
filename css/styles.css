@@ -321,6 +321,15 @@
       transform: translate(100%, 50px);
     }
   }
+
+  @keyframes clockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   /* @keyframes cloud-move-reverse {
       from {
         transform: translate(446px, 48px);
@@ -333,6 +342,11 @@
   .sun {
       animation: 4s color-change infinite normal linear;
   } */
+  .ferris-wheel {
+    transform-origin: center center;
+    animation: clockwise 1s infinite linear;
+  }
+
   path.cls-51 {
     animation: 30s cloud-move infinite normal linear;
   }

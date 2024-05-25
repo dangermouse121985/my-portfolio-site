@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--End Google Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!--Production Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="/css/style.production.css" />
+    <!--Style Sheet
+    <link rel="stylesheet" type="text/css" href="css/styles.css">-->
+    <title>My Projects: Chat App</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="/index.html"
+        ><img
+          class="page-header__item"
+          src="/img/davidlogo.svg"
+          alt="David Crichlow's Logo. An Emoji of David"
+      /></a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li class="navigation-list__item--mobile" role="presentation">
+            <img class="menu_button" src="/img/menu-button.svg" alt="" />
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="/index.html" role="menuitem">Home</a>
+          </li>
+          <li
+            class="navigation-list__item navigation-list__item--active"
+            role="presentation"
+          >
+            <a href="/work.html" role="menuitem">My Projects</a>
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="/about.html" role="menuitem">About Me</a>
+          </li>
+          <li class="navigation-list__item" role="presentation">
+            <a href="/contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-section--projects">
+      <div class="project-section">
+        <div class="header-image-container">
+          <img class="header-image" src="/img/myChat.png" alt="" />
+        </div>
+        <h1>Meet App</h1>
+        <h2>Project Description</h2>
+        <p>
+          The React Native Chat App is a mobile application designed to
+          facilitate communication between users. It allows users to send text
+          messages, share images, and share their current location. Built with
+          React Native and Expo, and using Google Firestore Database, the app
+          ensures smooth communication with online and offline capabilities.
+          Users can customize their chat experience by entering their name and
+          choosing a background color for the chat screen.
+        </p>
+        <p>
+          Through this project, I gained in-depth knowledge of React Native and
+          its ecosystem, including Expo for development and testing. I enhanced
+          my understanding of integrating Firebase for authentication and
+          Firestore for real-time data storage. Implementing the Gifted Chat
+          library taught me how to create rich, interactive chat interfaces. I
+          also learned how to handle media in mobile apps by enabling image
+          picking from the gallery and capturing images with the camera.
+          Additionally, I improved my skills in managing app state and ensuring
+          data persistence both online and offline.
+        </p>
+        <h2>Project Links</h2>
+        <ul>
+          <li>
+            Github Repository:
+            <a
+              class="project-links"
+              href="https://github.com/dangermouse121985/Chat-App"
+              >https://github.com/dangermouse121985/Chat-App</a
+            >
+          </li>
+        </ul>
+        <h2>Project Technology</h2>
+        <ul>
+          <li>
+            <strong>React Native: </strong>React Native was used to develop the
+            mobile application: It's cross platform support allowed me to
+            develop a single codebase that runs on both iOS and Android.
+          </li>
+          <li>
+            <strong>Expo: </strong>Provided the tools to streamline the
+            development process, including a simulator for testing on multiple
+            devices.
+          </li>
+          <li>
+            <strong>Google Firestore Database: </strong>Firestore was used for
+            real-time data storage and synchronization. It stored chat messages,
+            images, and location data.
+          </li>
+          <li>
+            <strong>Google Firebase Authentication: </strong>Implemented
+            anonymous authentication for user access control.
+          </li>
+          <li>
+            <strong>Gifted Chat Library: </strong> Used to create teh chat
+            interface, providing a rich set of customizable components for chat
+            bubble, input fields, and more.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+          <a
+            href="https://github.com/dangermouse121985"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="/img/github.svg"
+              alt="Github logo, linked to David's Gituhub Profile"
+            />
+          </a>
+          <a
+            href="https://twitter.com/Dangermouse1219"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="/img/twitter.svg"
+              alt="Twitter logo, linked to David's Twitter Profile"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/davidacrichlow/"
+            class="footer__image-link--hov"
+            target="_blank"
+          >
+            <img
+              src="/img/linkedin.svg"
+              alt="Linkedin logo, linked to David's Linkedin Profile"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>

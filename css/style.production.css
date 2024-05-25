@@ -90,7 +90,7 @@ body {
 
 .header-image {
   width: 100%;
-  margin: 10px;
+  padding-top: 10px;
 }
 
 .project-thumbnail-container{
@@ -107,6 +107,7 @@ body {
 }
 
 #contact-form {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -114,12 +115,24 @@ body {
 }
 
 .form__elements {
-  width: 200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .form__elements:nth-child(odd) {
   margin-top: 10px;
+}
+
+#message-container {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#message-container p {
+  background-color: #092947;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
 }
 
 .navigation-list__item {
@@ -204,6 +217,13 @@ p {
   font-size: 18px;
   line-height: 1.2;
   color: #fff;
+}
+
+.project-links {
+  white-space: pre-wrap; /* CSS3 */    
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */    
+  white-space: -o-pre-wrap; /* Opera 7 */    
 }
 
 a {
@@ -347,9 +367,11 @@ input[type=submit]:focus,
 .profile,
 .about-me,
 .contact-info,
-.project-section {
+.project-section,
+.message-container {
   margin: 0 auto;
   max-width: 1000px;
+  padding: 0 20px
   /* height: 60vh;
   display:flex;
   justify-content: center;
@@ -362,6 +384,7 @@ input[type=submit]:focus,
 
 .contact-info {
   text-align: center;
+  width: 50%;
 }
 
 .profile__emoji {
@@ -420,6 +443,15 @@ table {
             transform: translate(100%, 50px);
   }
 }
+
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* @keyframes cloud-move-reverse {
     from {
       transform: translate(446px, 48px);
@@ -432,6 +464,11 @@ table {
 .sun {
     animation: 4s color-change infinite normal linear;
 } */
+.ferris-wheel {
+  /* transform-origin: 416.5px 383.85px; */
+  animation: clockwise 10s infinite linear;
+}
+
 path.cls-51 {
   -webkit-animation: 30s cloud-move infinite normal linear;
           animation: 30s cloud-move infinite normal linear;
@@ -515,9 +552,16 @@ footer {
 }
 @media all and (max-width: 750px) {
   .contact-info,
-.about-me,
-.projects {
+    .about-me,
+  .projects {
     margin-top: 50px;
+  }
+
+  .contact-info,
+  .about-me,
+  .message-container,
+  .project-section {
+    width: 90%;
   }
 
   .grid {
