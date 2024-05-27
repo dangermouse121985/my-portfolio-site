@@ -37,6 +37,7 @@ body {
   position: fixed;
   width: 100%;
   padding: 10px;
+  z-index: 999;
   background: #092947;
   -webkit-box-shadow: 0px 5px 5px #000;
           box-shadow: 0px 5px 5px #000;
@@ -90,7 +91,7 @@ body {
 
 .header-image {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .project-thumbnail-container{
@@ -104,6 +105,10 @@ body {
   width: 100%;
   object-fit: cover;
   -o-object-fit: cover;
+}
+
+.work-overview {
+  text-decoration: none !important;
 }
 
 #contact-form {
@@ -220,10 +225,9 @@ p {
 }
 
 .project-links {
-  white-space: pre-wrap; /* CSS3 */    
-  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-  white-space: -pre-wrap; /* Opera 4-6 */    
-  white-space: -o-pre-wrap; /* Opera 7 */    
+  display: block;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 a {
@@ -364,6 +368,22 @@ input[type=submit]:focus,
           flex-grow: 1;
 }
 
+.forward-link {
+  position: fixed;
+  right: 0;
+  padding: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.backward-link {
+  position: fixed;
+  left: 0;
+  padding: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .profile,
 .about-me,
 .contact-info,
@@ -398,7 +418,7 @@ input[type=submit]:focus,
 .profile__portrait {
   float: left;
   width: 500px;
-  margin-right: 40px;
+  margin-right: 20px;
   margin-bottom: 20px;
   border-radius: 1%;
   padding-top: 20px;
@@ -412,6 +432,7 @@ input[type=submit]:focus,
 table {
   width: 75%;
   margin: 20px auto;
+  text-align: center;
 }
 
 /* 
@@ -554,7 +575,7 @@ footer {
   .contact-info,
     .about-me,
   .projects {
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .contact-info,
@@ -636,5 +657,25 @@ footer {
   .about-me,
 .profile {
     text-align: center;
+  }
+}
+
+@media all and (max-width: 1500px) {
+  .back-and-forward__button {
+    border: 3px solid #FCB139;
+    background-color: #092947;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .back-and-forward__link-text {
+    display: none;
   }
 }

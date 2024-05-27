@@ -130,8 +130,13 @@
                 // You can handle the response data here
                 document.getElementById('message-container').innerHTML = "<p>Your message has been sent successfully! David will reach out to you shorly.</p>"; // Display success message
             })
-            .catch(error => console.error('Error:', error));
-            document.getElementById('message-container').innerHTML = "<p>Oops! There was an error sending the message. Please wait a few minutes and try again or directly contact David using the above information.</p>"; // Display success message
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('message-container').innerHTML = "<p>Sending Message...</p>"; // Display waiting message
+                setTimeout(() => {
+                    document.getElementById('message-container').innerHTML = "<p>Oops! There was an error sending the message. Please wait a few minutes and try again or directly contact David using the above information.</p>"; // Display error message
+                }, 3000);
+            });
         });
     </script>
     
